@@ -1,27 +1,21 @@
 
-[challenges/tasks_amod/amod]
-checkout = git clone 'git@github.com:idsc-frazzoli/amod.git' 'amod'
-
-[challenges/tasks_amod/amodeus]
-checkout = git clone 'git@github.com:duckietown/amodeus.git' 'amodeus'
-
-[challenges/tasks_amod/challenge-aido1_amod1]
+[tasks_amod/challenge-aido1_amod1]
 checkout = git clone 'git@github.com:duckietown/challenge-aido1_test_amod.git' 'challenge-aido1_amod1'
 
-[challenges/tasks_amod/challenge-aido1_amod1-template-java]
+[tasks_amod/challenge-aido1_amod1-template-java]
 checkout = git clone 'git@github.com:duckietown/challenge-aido1_amod1-template-java.git' 'challenge-aido1_amod1-template-java'
 
-[challenges/tasks_amod/challenge-aido1_amod1-template-python]
+[tasks_amod/challenge-aido1_amod1-template-python]
 checkout = git clone 'git@github.com:duckietown/challenge-aido1_amod1-template-python.git' 'challenge-aido1_amod1-template-python'
 
-[challenges/tasks_embodied/challenge-aido1_LF1]
+[tasks_embodied/challenge-aido1_LF1]
 checkout = git clone 'git@github.com:duckietown/challenge-aido1_LF1.git' 'challenge-aido1_LF1'
 update = git pull origin v3
 
-[challenges/tasks_embodied/challenge-aido1_LF1-template-random]
+[tasks_embodied/challenge-aido1_LF1-template-random]
 checkout = git clone 'git@github.com:duckietown/challenge-aido1_LF1-template-random' 'challenge-aido1_LF1-template-random'
 update = git pull origin v3
 
-[challenges/tasks_embodied/challenge-aido1_LF1-template-tensorflow]
+[tasks_embodied/challenge-aido1_LF1-template-tensorflow]
 checkout = git clone 'git@github.com:duckietown/challenge-aido1_LF1-template-tensorflow.git' 'challenge-aido1_LF1-template-tensorflow'
 update = git pull origin v3
