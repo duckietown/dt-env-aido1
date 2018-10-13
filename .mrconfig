@@ -1,23 +1,28 @@
 [DEFAULT]
-include = $(export ORGANIZATION=duckietown) # change 'duckietown' to your own organization/user on GitHub
+fork          = hub fork --org=$ORG
+detach        = git remote rename origin upstream
+move          = git remote rename $ORG origin
 
-[tasks_amod/challenge-aido1_amod1]
-checkout = git clone git@github.com:$ORGANIZATION/challenge-aido1_test_amod.git challenge-aido1_amod1
-
-[tasks_amod/challenge-aido1_amod1-template-java]
-checkout = git clone git@github.com:$ORGANIZATION/challenge-aido1_amod1-template-java.git challenge-aido1_amod1-template-java
-
-[tasks_amod/challenge-aido1_amod1-template-python]
-checkout = git clone git@github.com:$ORGANIZATION/challenge-aido1_amod1-template-python.git challenge-aido1_amod1-template-python
-
-[tasks_embodied/challenge-aido1_LF1]
-checkout = git clone git@github.com:$ORGANIZATION/challenge-aido1_LF1.git challenge-aido1_LF1
+[challenge-aido1_amod1]
+checkout = hub clone git@github.com:duckietown/challenge-aido1_amod1.git challenge-aido1_amod1
 update = git pull origin v3
 
-[tasks_embodied/challenge-aido1_LF1-template-random]
-checkout = git clone git@github.com:$ORGANIZATION/challenge-aido1_LF1-template-random challenge-aido1_LF1-template-random
+[challenge-aido1_amod1-template-java]
+checkout = hub clone git@github.com:duckietown/challenge-aido1_amod1-template-java.git challenge-aido1_amod1-template-java
 update = git pull origin v3
 
-[tasks_embodied/challenge-aido1_LF1-template-tensorflow]
-checkout = git clone git@github.com:$ORGANIZATION/challenge-aido1_LF1-template-tensorflow.git challenge-aido1_LF1-template-tensorflow
+[challenge-aido1_amod1-template-python]
+checkout = hub clone git@github.com:duckietown/challenge-aido1_amod1-template-python.git challenge-aido1_amod1-template-python
 update = git pull origin v3
+
+[challenge-aido1_LF1]
+checkout = hub clone git@github.com:duckietown/challenge-aido1_LF1.git challenge-aido1_LF1
+update = git pull origin v3
+
+[challenge-aido1_LF1-template-random]
+checkout = hub clone git@github.com:duckietown/challenge-aido1_LF1-template-random challenge-aido1_LF1-template-random
+update = hub pull origin v3
+
+[challenge-aido1_LF1-template-tensorflow]
+checkout = hub clone git@github.com:duckietown/challenge-aido1_LF1-template-tensorflow.git challenge-aido1_LF1-template-tensorflow
+update = hub pull origin v3
